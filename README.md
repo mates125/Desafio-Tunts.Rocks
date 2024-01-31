@@ -1,14 +1,14 @@
--Link for the Git repository: https://github.com/mates125/Desafio-Tunts.Rocks.git
--Link for the copied Google Sheet: https://docs.google.com/spreadsheets/d/1qgPQ_uiRrkDv4eF_oBzOB0WhxlH8OlTC9ygGsdbmXVc/edit#gid=0
+-Link for the Git repository: https://github.com/mates125/Desafio-Tunts.Rocks.git  <br />
+-Link for the copied Google Sheet: https://docs.google.com/spreadsheets/d/1qgPQ_uiRrkDv4eF_oBzOB0WhxlH8OlTC9ygGsdbmXVc/edit#gid=0 <br />
 
-The following commands must be executed for the application to run:
+The following commands must be executed for the application to run: <br />
 
-pip install pandas
-pip install numpy
-pip install gspread
-python tunts_rocks_challenge.py
+pip install pandas <br />
+pip install numpy <br />
+pip install gspread <br />
+python tunts_rocks_challenge.py <br />
 
-Also, Python must be installed.
+Also, Python must be installed. <br />
 
 This code also needs a JSON file just like the sample one in the repository (googleapi-keys-sample.json). Since it has personal information (private API Ket) that can lead to 
 unwanted access to my Google Drive, the JSON file that actually has been used is unnavailable. To get Google Drive/Google Sheets API Keys, just follow the tutorial available in the 
