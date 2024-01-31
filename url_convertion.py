@@ -12,4 +12,5 @@ def convert_google_sheet_url(url):
     new_url = re.sub(pattern, replacement, url)
 
     return new_url
-    ##code found in https://sqlpad.io/tutorial/import-google-sheets-data-to-pandas-without-oauth-easy-guide/ and applied in order to import the Sheet as csv for the Tunts.Rocks challenge 
+    ##code found in https://sqlpad.io/tutorial/import-google-sheets-data-to-pandas-without-oauth-easy-guide/ and applied in order to import the Google Sheet as csv for the 
+    # Tunts.Rocks challenge 

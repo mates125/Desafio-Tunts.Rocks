@@ -5,7 +5,7 @@ from url_convertion import convert_google_sheet_url
 import math
 
 #readind the dataframe
-url = 'https://docs.google.com/spreadsheets/d/1c84btgaEh1LI1LTD-nXCdQHGyzml0_IyZQzFD_AKajA/edit#gid=0'
+url = 'https://docs.google.com/spreadsheets/d/1qgPQ_uiRrkDv4eF_oBzOB0WhxlH8OlTC9ygGsdbmXVc/edit#gid=0'
 new_url = convert_google_sheet_url(url)
 df = pd.read_csv(new_url)
 print("Result: \n", df, "\n")
@@ -48,3 +48,10 @@ df.drop(columns=["Média"], inplace = True)
 
 print("Final dataframe: \n", df)
 
+gc = gspread.service_account(filename='googleapi-keys-sample.json')
+
+sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/1qgPQ_uiRrkDv4eF_oBzOB0WhxlH8OlTC9ygGsdbmXVc/edit#gid=0')
+
+worksheet = sh.worksheet("engenharia_de_software")
+
+worksheet.update([df.columns.values.tolist()] + df.values.tolist(), 'A3')
